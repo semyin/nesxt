@@ -9,7 +9,7 @@ export class BlogController {
 
   @Get()
   findAll(): BlogPost[] {
-    console.log('findAll ++');
+    console.log('findAll ++2');
     return this.blogService.findAll();
   }
 
