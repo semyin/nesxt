@@ -1,0 +1,6 @@
+{
+  "watch": ["src/server", "src/main.ts"],
+  "ext": "ts",
+  "ignore": ["src/**/*.spec.ts"],
+  "exec": "node --require @swc/register src/main.ts"
+}

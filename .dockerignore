@@ -1,0 +1,33 @@
+# 版本控制
+.git
+.gitignore
+
+# 依赖目录
+node_modules
+npm-debug.log
+
+# 构建输出
+dist
+.next
+out
+
+# 开发和测试文件
+*.test.ts
+*.spec.ts
+test
+coverage
+
+# 环境文件和密钥
+.env
+.env.*
+!.env.example
+
+# 编辑器配置
+.idea
+.vscode
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db

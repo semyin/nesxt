@@ -1,0 +1,120 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.submitButton {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-hover);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border: none;
+  text-align: center;
+}
+
+.cancelButton:hover {
+  background-color: var(--border-color);
+}
+
+.error {
+  color: var(--danger-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
